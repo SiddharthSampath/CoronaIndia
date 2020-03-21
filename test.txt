@@ -1,0 +1,84 @@
+ State : Andhra Pradesh	 Indians affected : 3	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Chhattisgarh	 Indians affected : 1	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Delhi	 Indians affected : 16	 foreigners affected : 1	 cured or migrated : 5	 deaths : 1
+ State : Gujarat	 Indians affected : 5	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Haryana	 Indians affected : 3	 foreigners affected : 14	 cured or migrated : 0	 deaths : 0
+ State : Karnataka	 Indians affected : 15	 foreigners affected : 0	 cured or migrated : 1	 deaths : 1
+ State : Kerala	 Indians affected : 26	 foreigners affected : 2	 cured or migrated : 3	 deaths : 0
+ State : Maharashtra	 Indians affected : 49	 foreigners affected : 3	 cured or migrated : 0	 deaths : 1
+ State : Odisha	 Indians affected : 2	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Puducherry	 Indians affected : 1	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Punjab	 Indians affected : 2	 foreigners affected : 0	 cured or migrated : 0	 deaths : 1
+ State : Rajasthan	 Indians affected : 15	 foreigners affected : 2	 cured or migrated : 3	 deaths : 0
+ State : Tamil Nadu	 Indians affected : 3	 foreigners affected : 0	 cured or migrated : 1	 deaths : 0
+ State : Telengana	 Indians affected : 8	 foreigners affected : 9	 cured or migrated : 1	 deaths : 0
+ State : Union Territory of Chandigarh	 Indians affected : 1	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Union Territory of Jammu and Kashmir	 Indians affected : 4	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Union Territory of Ladakh	 Indians affected : 10	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Uttar Pradesh	 Indians affected : 22	 foreigners affected : 1	 cured or migrated : 9	 deaths : 0
+ State : Uttarakhand	 Indians affected : 3	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : West Bengal	 Indians affected : 2	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+Total number of confirmed cases in India : Indian Nationals = 191 #	 Foreign Nationals = 32 #	 Cured or Migrated = 23	 Death = 4 
+ State : Andhra Pradesh	 Indians affected : 3	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Chhattisgarh	 Indians affected : 1	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Delhi	 Indians affected : 16	 foreigners affected : 1	 cured or migrated : 5	 deaths : 1
+ State : Gujarat	 Indians affected : 5	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Haryana	 Indians affected : 3	 foreigners affected : 14	 cured or migrated : 0	 deaths : 0
+ State : Karnataka	 Indians affected : 15	 foreigners affected : 0	 cured or migrated : 1	 deaths : 1
+ State : Kerala	 Indians affected : 26	 foreigners affected : 2	 cured or migrated : 3	 deaths : 0
+ State : Maharashtra	 Indians affected : 49	 foreigners affected : 3	 cured or migrated : 0	 deaths : 1
+ State : Odisha	 Indians affected : 2	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Puducherry	 Indians affected : 1	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Punjab	 Indians affected : 2	 foreigners affected : 0	 cured or migrated : 0	 deaths : 1
+ State : Rajasthan	 Indians affected : 15	 foreigners affected : 2	 cured or migrated : 3	 deaths : 0
+ State : Tamil Nadu	 Indians affected : 3	 foreigners affected : 0	 cured or migrated : 1	 deaths : 0
+ State : Telengana	 Indians affected : 8	 foreigners affected : 9	 cured or migrated : 1	 deaths : 0
+ State : Union Territory of Chandigarh	 Indians affected : 1	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Union Territory of Jammu and Kashmir	 Indians affected : 4	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Union Territory of Ladakh	 Indians affected : 10	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Uttar Pradesh	 Indians affected : 22	 foreigners affected : 1	 cured or migrated : 9	 deaths : 0
+ State : Uttarakhand	 Indians affected : 3	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : West Bengal	 Indians affected : 2	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+Total number of confirmed cases in India : Indian Nationals = 191 #	 Foreign Nationals = 32 #	 Cured or Migrated = 23	 Death = 4 
+ State : Andhra Pradesh	 Indians affected : 3	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Chhattisgarh	 Indians affected : 1	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Delhi	 Indians affected : 16	 foreigners affected : 1	 cured or migrated : 5	 deaths : 1
+ State : Gujarat	 Indians affected : 5	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Haryana	 Indians affected : 3	 foreigners affected : 14	 cured or migrated : 0	 deaths : 0
+ State : Karnataka	 Indians affected : 15	 foreigners affected : 0	 cured or migrated : 1	 deaths : 1
+ State : Kerala	 Indians affected : 26	 foreigners affected : 2	 cured or migrated : 3	 deaths : 0
+ State : Maharashtra	 Indians affected : 49	 foreigners affected : 3	 cured or migrated : 0	 deaths : 1
+ State : Odisha	 Indians affected : 2	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Puducherry	 Indians affected : 1	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Punjab	 Indians affected : 2	 foreigners affected : 0	 cured or migrated : 0	 deaths : 1
+ State : Rajasthan	 Indians affected : 15	 foreigners affected : 2	 cured or migrated : 3	 deaths : 0
+ State : Tamil Nadu	 Indians affected : 3	 foreigners affected : 0	 cured or migrated : 1	 deaths : 0
+ State : Telengana	 Indians affected : 8	 foreigners affected : 9	 cured or migrated : 1	 deaths : 0
+ State : Union Territory of Chandigarh	 Indians affected : 1	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Union Territory of Jammu and Kashmir	 Indians affected : 4	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Union Territory of Ladakh	 Indians affected : 10	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Uttar Pradesh	 Indians affected : 22	 foreigners affected : 1	 cured or migrated : 9	 deaths : 0
+ State : Uttarakhand	 Indians affected : 3	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : West Bengal	 Indians affected : 2	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+Total number of confirmed cases in India : Indian Nationals = 191 #	 Foreign Nationals = 32 #	 Cured or Migrated = 23	 Death = 4 
+ State : Andhra Pradesh	 Indians affected : 3	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Chhattisgarh	 Indians affected : 1	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Delhi	 Indians affected : 16	 foreigners affected : 1	 cured or migrated : 5	 deaths : 1
+ State : Gujarat	 Indians affected : 5	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Haryana	 Indians affected : 3	 foreigners affected : 14	 cured or migrated : 0	 deaths : 0
+ State : Karnataka	 Indians affected : 15	 foreigners affected : 0	 cured or migrated : 1	 deaths : 1
+ State : Kerala	 Indians affected : 26	 foreigners affected : 2	 cured or migrated : 3	 deaths : 0
+ State : Maharashtra	 Indians affected : 49	 foreigners affected : 3	 cured or migrated : 0	 deaths : 1
+ State : Odisha	 Indians affected : 2	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Puducherry	 Indians affected : 1	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Punjab	 Indians affected : 2	 foreigners affected : 0	 cured or migrated : 0	 deaths : 1
+ State : Rajasthan	 Indians affected : 15	 foreigners affected : 2	 cured or migrated : 3	 deaths : 0
+ State : Tamil Nadu	 Indians affected : 3	 foreigners affected : 0	 cured or migrated : 1	 deaths : 0
+ State : Telengana	 Indians affected : 8	 foreigners affected : 9	 cured or migrated : 1	 deaths : 0
+ State : Union Territory of Chandigarh	 Indians affected : 1	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Union Territory of Jammu and Kashmir	 Indians affected : 4	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Union Territory of Ladakh	 Indians affected : 10	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : Uttar Pradesh	 Indians affected : 22	 foreigners affected : 1	 cured or migrated : 9	 deaths : 0
+ State : Uttarakhand	 Indians affected : 3	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+ State : West Bengal	 Indians affected : 2	 foreigners affected : 0	 cured or migrated : 0	 deaths : 0
+Total number of confirmed cases in India : Indian Nationals = 191 #	 Foreign Nationals = 32 #	 Cured or Migrated = 23	 Death = 4 

@@ -42,70 +42,6 @@ def data_retrieval(retrieved_data, scraped_data, final_row):
 
 def send_email_notification():
 
-    '''
-    import smtplib 
-from email.mime.multipart import MIMEMultipart 
-from email.mime.text import MIMEText 
-from email.mime.base import MIMEBase 
-from email import encoders 
-   
-fromaddr = "themysteriouswebscraper@gmail.com"
-toaddr = "siddharthsampath98@gmail.com"
-   
-# instance of MIMEMultipart 
-msg = MIMEMultipart() 
-  
-# storing the senders email address   
-msg['From'] = fromaddr 
-  
-# storing the receivers email address  
-msg['To'] = toaddr 
-  
-# storing the subject  
-msg['Subject'] = "Coronavirus updates in India"
-  
-# string to store the body of the mail 
-
-  
-# attach the body with the msg instance 
-msg.attach(MIMEText(email_content, 'plain')) 
-  
-# open the file to be sent  
-filename = "File_name_with_extension"
-attachment = open("test1.txt", "rb") 
-  
-# instance of MIMEBase and named as p 
-p = MIMEBase('application', 'octet-stream') 
-  
-# To change the payload into encoded form 
-p.set_payload((attachment).read()) 
-  
-# encode into base64 
-encoders.encode_base64(p) 
-   
-p.add_header('Content-Disposition', "attachment; filename= %s" % filename) 
-  
-# attach the instance 'p' to instance 'msg' 
-msg.attach(p) 
-  
-# creates SMTP session 
-s = smtplib.SMTP('smtp.gmail.com', 587) 
-  
-# start TLS for security 
-s.starttls() 
-  
-# Authentication 
-s.login(fromaddr, "Webscraping983!") 
-  
-# Converts the Multipart msg into a string 
-text = msg.as_string() 
-  
-# sending the mail 
-s.sendmail(fromaddr, toaddr, text) 
-  
-# terminating the session 
-s.quit() 
-    '''
     with open("test1.txt","w") as fp:
        fp.write(tab.get_string())
     
@@ -124,12 +60,12 @@ s.quit()
                 print(f"Old Stats in {item[1]} \n Indians affected : {item[6][1]}\t foreigners affected : {item[6][2]}\t cured or migrated : {item[6][3]}\t deaths : {item[6][4]}")
                 print(f"New Stats in {item[1]}")
             elif item[0] == "TOTAL":
-                email_content += f"Old Stats in Total Cases \n Indians affected : {item[6][1]}\t foreigners affected : {item[6][2]}\t cured or migrated : {item[6][3]}\t deaths : {item[6][4]}"
+                email_content += f"Old Stats in Total Cases \n Indians affected : {item[6][1]}\t foreigners affected : {item[6][2]}\t cured or migrated : {item[6][3]}\t deaths : {item[6][4]}\n"
                 email_content += "The new total of the number of cases"
                 print(f"Old Stats in Total Cases \n Indians affected : {item[6][1]}\t foreigners affected : {item[6][2]}\t cured or migrated : {item[6][3]}\t deaths : {item[6][4]}")
                 print("The new total of the number of cases")
 
-            email_content += f"Indians affected : {item[2]}\t foreigners affected : {item[3]}\t cured or migrated : {item[4]}\t deaths : {item[5]}"
+            email_content += f"Indians affected : {item[2]}\t foreigners affected : {item[3]}\t cured or migrated : {item[4]}\t deaths : {item[5]}\n"
             print(f"Indians affected : {item[2]}\t foreigners affected : {item[3]}\t cured or migrated : {item[4]}\t deaths : {item[5]}")
     else:
         email_content += "No change in the numbers"
@@ -185,11 +121,10 @@ s.quit()
     
     # sending the mail 
     s.sendmail(fromaddr, toaddr, text) 
-    
+    s.sendmail(fromaddr, 'radhasampath8@gmail.com', text)
     # terminating the session 
     s.quit()
-    # smtp_conn.sendmail('themysteriouswebscraper@gmail.com','siddharthsampath98@gmail.com',f'Subject: Coronavirus Updates in India \n\n Hello,\n{email_content}\n Regards,\n The Mysterious WebScraper')
-    # smtp_conn.quit()
+    
     return
 
 
@@ -213,17 +148,19 @@ if not dbExist:
     ''')
 tab = PrettyTable()
 tab.field_names = ["State", "Indian_Affected","Foreigners Affected","Cured or Migrated","Deaths"]
-rows = driver.find_elements_by_xpath("//tbody/tr")
+button = driver.find_element_by_xpath("//button[@class='collapsible']")
+button.click()
+rows = driver.find_elements_by_xpath("(//div[@class='table-responsive'])[2]/table/tbody/tr")
 count =  0
 new_data = []
 for row in rows:
     count += 1
     if count == len(rows):
-        state = driver.find_element_by_xpath(f"//tbody/tr[{count}]/td[1]").text
-        indian_cases = driver.find_element_by_xpath(f"//tbody/tr[{count}]/td[2]").text
-        foreign_cases = driver.find_element_by_xpath(f"//tbody/tr[{count}]/td[3]").text
-        cured = driver.find_element_by_xpath(f"//tbody/tr[{count}]/td[4]").text
-        death = driver.find_element_by_xpath(f"//tbody/tr[{count}]/td[5]").text
+        state = driver.find_element_by_xpath(f"(//div[@class='table-responsive'])[2]/table/tbody/tr[{count}]/td[1]").text
+        indian_cases = driver.find_element_by_xpath(f"(//div[@class='table-responsive'])[2]/table/tbody/tr[{count}]/td[2]").text
+        foreign_cases = driver.find_element_by_xpath(f"(//div[@class='table-responsive'])[2]/table/tbody/tr[{count}]/td[3]").text
+        cured = driver.find_element_by_xpath(f"(//div[@class='table-responsive'])[2]/table/tbody/tr[{count}]/td[4]").text
+        death = driver.find_element_by_xpath(f"(//div[@class='table-responsive'])[2]/table/tbody/tr[{count}]/td[5]").text
         c.execute('SELECT * FROM CoronaV WHERE STATE=?',(state,))
         retrieved_data = c.fetchone()
         scraped_data = [state,indian_cases,foreign_cases,cured,death]
@@ -245,11 +182,11 @@ for row in rows:
         print(f"{state} : Indian Nationals = {indian_cases}\t Foreign Nationals = {foreign_cases}\t Cured or Migrated = {cured}\t Death = {death} ")
         break
     else:
-        state = driver.find_element_by_xpath(f"//tbody/tr[{count}]/td[2]").text
-        indian_cases = driver.find_element_by_xpath(f"//tbody/tr[{count}]/td[3]").text
-        foreign_cases = driver.find_element_by_xpath(f"//tbody/tr[{count}]/td[4]").text
-        cured = driver.find_element_by_xpath(f"//tbody/tr[{count}]/td[5]").text
-        death = driver.find_element_by_xpath(f"//tbody/tr[{count}]/td[6]").text
+        state = driver.find_element_by_xpath(f"(//div[@class='table-responsive'])[2]/table/tbody/tr[{count}]/td[2]").text
+        indian_cases = driver.find_element_by_xpath(f"(//div[@class='table-responsive'])[2]/table/tbody/tr[{count}]/td[3]").text
+        foreign_cases = driver.find_element_by_xpath(f"(//div[@class='table-responsive'])[2]/table/tbody/tr[{count}]/td[4]").text
+        cured = driver.find_element_by_xpath(f"(//div[@class='table-responsive'])[2]/table/tbody/tr[{count}]/td[5]").text
+        death = driver.find_element_by_xpath(f"(//div[@class='table-responsive'])[2]/table/tbody/tr[{count}]/td[6]").text
         scraped_data = [state,indian_cases,foreign_cases,cured,death]
         c.execute('SELECT * FROM CoronaV WHERE STATE=?',(state,))
         retrieved_data = c.fetchone()
@@ -274,23 +211,6 @@ conn.close()
 driver.close()
 
 send_email_notification()
-# if new_data:
-#     for item in new_data:
-#         if item[0] == "NEW_STATE":
-#             print(f"New State - {item[1]} affected")
-#         elif item[0] == "EXISTING":
-#             print(f"Change in stats in {item[1]}")
-#             print(f"Old Stats in {item[1]} \n Indians affected : {item[6][1]}\t foreigners affected : {item[6][2]}\t cured or migrated : {item[6][3]}\t deaths : {item[6][4]}")
-#             print(f"New Stats in {item[1]}")
-#         elif item[0] == "TOTAL":
-#             print(f"Old Stats in Total Cases \n Indians affected : {item[6][1]}\t foreigners affected : {item[6][2]}\t cured or migrated : {item[6][3]}\t deaths : {item[6][4]}")
-#             print("The new total of the number of cases")
-
-
-#         print(f"Indians affected : {item[2]}\t foreigners affected : {item[3]}\t cured or migrated : {item[4]}\t deaths : {item[5]}")
-# else:
-#     print("No change in the numbers")
-
 
     
        
